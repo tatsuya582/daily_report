@@ -122,3 +122,32 @@ ON 両テーブルの結合条件
 SET TRANSACTION ISOLATION LEVEL 分離レベル
 SET CURRENT ISOLATION 分離レベル
 ```
+- `GRANT`: テーブル操作の権限を付与する
+- `REVOKE`: テーブル操作の権限をはく奪する
+```sql
+GRANT 権限名 TO ユーザー名
+REVOKE 権限名 TO ユーザー名
+```
+- `CREATETABLE`: テーブルを作成する。
+```sql
+CREATE TABLE テーブル名 (
+    列名1 列1の型名,
+    列名2 列2の型名
+    :
+    :
+)
+```
+- `DEFAULT`: デフォルト値を設定できる。型名のあとに記述`DEFAULT デフォルト値`
+- `DROP TABLE`: テーブル削除
+- `ALTER TABLE`: テーブルの更新
+```sql
+-- 列の追加
+ALTER TABLE テーブル名 ADD 列名 型
+-- 列の削除
+ALTER TABLE テーブル名 DROP 列名
+```
+- 列名の後に制約を指定できる。
+- `NOT NULL`: NULLができない。
+- `UNIQUE`: 重複禁止
+- `CHECK`: CHECKの後のカッコ内の条件式が真となるような値のみ格納できる。
+- `PRIMARY KEY`: 主キーを指定できる。
