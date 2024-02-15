@@ -10,7 +10,7 @@
 - `DUMP`: バックアップを取る。postgresqlだと`pg_dump`コマンド。`pg_dump database名 > ファイル名`
 - リストアは`psql database名 < ファイル名`
 - `BETWEEN`: 範囲指定。`BETWEEN 下限値 AND 上限値`不等号を使うより可読性が高い。notを使うと指定範囲外を選択できる。
-- `DESTINCT`: 値の重複を排除してカラムを抽出。
+- `DISTINCT`: 値の重複を排除してカラムを抽出。
 - 正規表現は`~`の後に書いて使う。SQLiteでは`REGEXP`
 - データを追加。`INSERT INTO テーブル名 VALUES (値)`
 - データの更新は`UPDATE テーブル名 SET カラム名 = 値`WHEREなどで指定する。
